@@ -16,8 +16,8 @@ body {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 4fr 1fr 1fr 1fr;
-      grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+  -ms-grid-columns: 3fr 4fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 4fr 1fr 1fr 1fr;
   padding: 20px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -47,8 +47,8 @@ a {
   background: rgba(0, 0, 0, 0.45);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 2fr;
-      grid-template-rows: 1fr 1fr 2fr;
+  -ms-grid-rows: 1fr 1fr 2fr 1fr  1fr;
+      grid-template-rows: 1fr 1fr 2fr 1fr  1fr;
 }
 
 .up {
@@ -90,6 +90,8 @@ a {
   color: white;
   border: 0px;
   margin-top: 30px;
+  position: relative;
+  left: 25%;
 }
 
 .H-content {
@@ -99,9 +101,18 @@ a {
   place-self: center;
 }
 
-.empty {
-  -ms-grid-row: 4;
+.h-icons {
+  -ms-grid-row: 5;
   -ms-grid-row-span: 1;
-  grid-row: 4/5;
+  grid-row: 5/6;
+  place-self: center;
+}
+
+.d {
+  font-size: 100px;
+  color: #B2923D;
+  padding: 10px;
+  background-color: #2F2F2F;
+  border: 3px solid #B2923D;
 }
 /*# sourceMappingURL=style.css.map */
